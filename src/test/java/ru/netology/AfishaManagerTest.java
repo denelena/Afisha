@@ -1,47 +1,28 @@
 package ru.netology;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.netology.domain.MovieEntry;
+import ru.netology.manager.AfishaManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AfishaManagerTest {
     private AfishaManager am;
-    private MovieEntry movie001;
-    private MovieEntry movie002;
-    private MovieEntry movie003;
-    private MovieEntry movie004;
-    private MovieEntry movie005;
-    private MovieEntry movie006;
-    private MovieEntry movie007;
-    private MovieEntry movie008;
-    private MovieEntry movie009;
-    private MovieEntry movie010;
-    private MovieEntry movie011;
-    private MovieEntry movie012;
-    private MovieEntry movie013;
-    private MovieEntry movie014;
-    private MovieEntry movie015;
-
-    @BeforeEach
-    public void setUp() {
-        movie001 = new MovieEntry(1, "Terminator", "Action", "term.png", false);
-        movie002 = new MovieEntry(2, "Rocky", "Action", "rocky.png", false);
-        movie003 = new MovieEntry(3, "First Blood", "Action", "fb.png", false);
-        movie004 = new MovieEntry(4, "Cobra", "Action", "cbr.png", false);
-        movie005 = new MovieEntry(5, "Bananas", "Action", "bananas.png", false);
-        movie006 = new MovieEntry(6, "Assassins", "Action", "ass.png", false);
-        movie007 = new MovieEntry(7, "Demolition Man", "Action", "dm.png", false);
-        movie008 = new MovieEntry(8, "Rambo", "Action", "rambo.png", false);
-        movie009 = new MovieEntry(9, "Creed", "Action", "creed.png", false);
-        movie010 = new MovieEntry(10, "Homefront", "Action", "hf.png", false);
-        movie011 = new MovieEntry(11, "Alien", "Sci-Fi", "aln.png", false);
-        movie012 = new MovieEntry(12, "Gravity", "Sci-Fi", "gvt.png", false);
-        movie013 = new MovieEntry(13, "Event Horizon", "Goofy", "aln.png", false);
-        movie014 = new MovieEntry(14, "Shrek", "Cartoons", "shr.png", false);
-        movie015 = new MovieEntry(15, "Scooby-Doo", "Cartoons", "scbd.png", false);
-    }
+    private MovieEntry movie001 = new MovieEntry(1, "Terminator", "Action", "term.png", false);
+    private MovieEntry movie002 = new MovieEntry(2, "Rocky", "Action", "rocky.png", false);
+    private MovieEntry movie003 = new MovieEntry(3, "First Blood", "Action", "fb.png", false);
+    private MovieEntry movie004 = new MovieEntry(4, "Cobra", "Action", "cbr.png", false);
+    private MovieEntry movie005 = new MovieEntry(5, "Bananas", "Action", "bananas.png", false);
+    private MovieEntry movie006 = new MovieEntry(6, "Assassins", "Action", "ass.png", false);
+    private MovieEntry movie007 = new MovieEntry(7, "Demolition Man", "Action", "dm.png", false);
+    private MovieEntry movie008 = new MovieEntry(8, "Rambo", "Action", "rambo.png", false);
+    private MovieEntry movie009 = new MovieEntry(9, "Creed", "Action", "creed.png", false);
+    private MovieEntry movie010 = new MovieEntry(10, "Homefront", "Action", "hf.png", false);
+    private MovieEntry movie011 = new MovieEntry(11, "Alien", "Sci-Fi", "aln.png", false);
+    private MovieEntry movie012 = new MovieEntry(12, "Gravity", "Sci-Fi", "gvt.png", false);
+    private MovieEntry movie013 = new MovieEntry(13, "Event Horizon", "Goofy", "aln.png", false);
+    private MovieEntry movie014 = new MovieEntry(14, "Shrek", "Cartoons", "shr.png", false);
+    private MovieEntry movie015 = new MovieEntry(15, "Scooby-Doo", "Cartoons", "scbd.png", false);
 
     @Test
     public void shouldAddManyUsingDefaultLentaSize() {

@@ -1,4 +1,6 @@
-package ru.netology;
+package ru.netology.manager;
+
+import ru.netology.domain.MovieEntry;
 
 public class AfishaManager {
     private int lentaSize = 10;
@@ -12,7 +14,7 @@ public class AfishaManager {
     }
 
     public void add(MovieEntry newMovie) {
-        //отчего бы не хранить фильмы в массиве movies в уже инвертированном порядке?
+        //Будем хранить фильмы в массиве movies в уже инвертированном порядке!
         //т.е. ранее добавленные - сдвинем на 1 позицию вперед, а новый фильм запишем по индексу 0.
         // Это заметно упростит код getLenta()
         int newLength = movies.length + 1;
